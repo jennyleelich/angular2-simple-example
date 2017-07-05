@@ -1,0 +1,7 @@
+<div class="cmp-1">
+  <p>Hello,{{greeting}}</p>
+  <label for=""><input type='checkbox' [(ngModel)]="isShowMore">show detail or not</label>
+  <p *ngIf="isShowMore" highlight>Angular 2 is from google</p>
+  <child [message]="msgToChild" (outer)="receive($event)"></child>
+  <p>from child componen: {{msgFromChild}}</p>
+</div>
